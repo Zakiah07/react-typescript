@@ -1,6 +1,6 @@
 import './App.css';
 // import { Container } from './components/Container';
-import { Counter } from './components/state/Counter';
+// import { Counter } from './components/state/Counter';
 // import { Input } from './components/Input';
 // import { Greet } from './components/Greet';
 // import { Heading } from './components/Heading';
@@ -9,6 +9,10 @@ import { Counter } from './components/state/Counter';
 // import { PersonList } from './components/PersonList';
 // import { Status } from './components/Status';
 // import { Button } from './components/Button';
+// import { ThemeContextProvider } from "./components/context/ThemeContext"
+// import { Box } from "./components/context/Box"
+import { UserContextProvider } from './components/context/UserContext';
+import { User } from './components/context/User';
 
 function App() {
   // const personName = {
@@ -47,7 +51,13 @@ function App() {
       }} />
       <Input value="" handleChange={(event) => console.log(event)} /> */}
       {/* <Container styles={{ border: '1px solid black', padding: '1rem' }} /> */}
-      <Counter />
+      {/* <Counter /> */}
+      {/* <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider> */}
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
