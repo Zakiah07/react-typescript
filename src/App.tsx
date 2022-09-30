@@ -1,4 +1,8 @@
 import './App.css';
+import { List } from './components/generics/List';
+// import { Private } from './components/auth/Private';
+// import { Profile } from "./components/auth/Profile"
+// import { Counter } from './components/class/Counter';
 // import { Container } from './components/Container';
 // import { Counter } from './components/state/Counter';
 // import { Input } from './components/Input';
@@ -37,6 +41,29 @@ function App() {
 
   return (
     <div className="App">
+      {/* <List items={["Batman", "Superman", "Wonder Woman"]}
+        onClick={(item) => console.log(item)} />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+      <List items={[
+        {
+          id: 1,
+          first: 'Bruce',
+          last: 'Wayne',
+        },
+        {
+          id: 2,
+          first: 'Clark',
+          last: 'Kent',
+        },
+        {
+          id: 3,
+          first: 'Princess',
+          last: 'Diana',
+        },
+      ]}
+        onClick={(item) => console.log(item)} />
+      {/* <Private isLoggedIn={true} component={Profile} /> */}
+      {/* <Counter message='The count value is' /> */}
       {/* <Greet name="Zakiah" messageCount={20} isLoggedIn={false} /> */}
       {/* <Person name={personName} /> */}
       {/* <PersonList names={nameList} /> */}
