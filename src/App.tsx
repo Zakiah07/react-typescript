@@ -1,5 +1,6 @@
 import './App.css';
-import { List } from './components/generics/List';
+import { RandomNumber } from './restriction/RandomNumber';
+// import { List } from './components/generics/List';
 // import { Private } from './components/auth/Private';
 // import { Profile } from "./components/auth/Profile"
 // import { Counter } from './components/class/Counter';
@@ -41,10 +42,11 @@ function App() {
 
   return (
     <div className="App">
+      <RandomNumber value={10} isPositive />
       {/* <List items={["Batman", "Superman", "Wonder Woman"]}
         onClick={(item) => console.log(item)} />
       <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
-      <List items={[
+      {/* <List items={[
         {
           id: 1,
           first: 'Bruce',
@@ -61,7 +63,7 @@ function App() {
           last: 'Diana',
         },
       ]}
-        onClick={(item) => console.log(item)} />
+        onClick={(item) => console.log(item)} /> */}
       {/* <Private isLoggedIn={true} component={Profile} /> */}
       {/* <Counter message='The count value is' /> */}
       {/* <Greet name="Zakiah" messageCount={20} isLoggedIn={false} /> */}
